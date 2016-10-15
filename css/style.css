@@ -23,7 +23,7 @@ body {
   list-style: none;
 }
 .nav .nav__list .nav__list__item {
-  padding-right: 20px;
+  padding-right: 15px;
   display: inline-block;
 }
 .nav .nav__list .nav__list__item a {
@@ -149,6 +149,11 @@ body {
   color: #202242;
   padding: 0 10px;
   border-right: 2px solid #fff;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.header .header__input select:hover {
+  background: #fed600;
 }
 .header .header__input button {
   height: 50px;
