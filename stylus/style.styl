@@ -1,0 +1,447 @@
+white = #fff
+blue = #202242
+yellow = #ffe13e
+black = #000
+gray = #ddd 
+review-gray = #faf9f9
+rev-gray = #a4a4a4
+text-gray = #adadad
+dark-gray = #696969
+light-gray = #67687b
+light = #fbf8f1
+light-blue = #363855 
+
+font-stuck = 'Raleway', sans-serif
+font-header = 'Playfair Display', serif
+    
+body 
+    width 100%
+    height 100%
+    background white
+    font 14px font-stuck
+    
+    
+.nav
+    width 100%
+    background white
+    height 150px
+    display flex
+    .nav__logo
+        max-width 100%
+        max-height 100%
+        margin 60px 0 0 80px
+    .nav__list
+        margin 70px 0 0 70px
+        list-style none
+        .nav__list__item
+            padding-right 15px
+            display inline-block
+            a
+                color blue
+                text-transform uppercase
+                font 1.14em font-stuck
+                text-decoration none
+                padding 10px
+                &:hover
+                    color yellow
+    .line
+        height 100%
+        width 1px
+        background gray
+    .nav__info
+        margin 40px 60px 0 40px
+        .nav__info__text
+            font 0.85em font-stuck
+            font-weight 600
+            color blue
+        .nav__info__contacts
+            display flex
+            margin-top 20px
+            button
+                background yellow
+                color blue
+                padding 15px 0
+                flex 1
+                border none
+                font 1em font-stuck
+                font-weight 600
+                transition all .3s ease-in
+                &:hover
+                    background darken(yellow, 20%)
+            .line-sep 
+                height 35px
+                width 2px
+                background blue
+                opacity .3
+                margin 7px 0 0 22px
+            p
+                font 1.7em font-stuck
+                font-weight 600
+                flex 1
+                margin 10px 0 0 20px
+                
+                
+        
+.header
+    width 100%
+    height 790px
+    background-color blue
+    background url('../img/bg.png') no-repeat
+    background-position center center
+    background-size cover
+    text-align center
+    color white
+    .header__leading
+        padding-top 220px
+        font 3.4em font-header
+        margin-bottom 40px
+    .header__text
+        font 2.14em font-stuck
+        margin-bottom 60px
+    img
+        margin-bottom 50px
+        max-width 100%
+        max-height 100%
+    .header__input
+        display flex
+        max-width 535px
+        padding 18px
+        margin 0 auto
+        background gray
+        input
+            background white
+            color black
+            text-transform capitalize
+            font 1.28em font-stuck
+            flex 3
+            border none
+            &[placeholder]
+                padding-left 20px
+        select
+            flex 0.7
+            border none
+            background yellow
+            font 1em font-stuck
+            font-weight 700
+            color blue
+            padding 0 10px
+            border-right 2px solid white
+            transition all .3s ease-in
+            &:hover
+                    background darken(yellow, 20%)
+        button
+            height 50px
+            flex 1.5
+            font 0.9em font-stuck
+            font-weight 700
+            cursor pointer
+            color white
+            border none
+            background yellow
+            transition all .3s ease-in
+            &:hover
+                    background darken(yellow, 20%)
+        
+
+.about 
+    width 100%
+    height 650px
+    color white
+    text-align center
+    .about__webhost
+        width 50%
+        background blue
+        float left
+        height 100%
+        .a-webhost__content
+            max-width 460px
+            display block
+            margin 100px auto
+            img
+                max-width 100%
+                max-height 100%
+                margin-bottom 50px
+            .about__webhost__heading
+                font 2.57em font-stuck
+                font-weight 700
+                margin-bottom 20px
+            .about__webhost__text
+                font 1em font-stuck
+                margin-bottom 50px
+            .about__more
+                color white
+                font 1.28em font-stuck
+                padding 10px 50px 
+                border 3px solid white
+                text-decoration none
+                transition all .3s ease-in
+                &:hover
+                    border-radius 25px
+    .about__domain
+        background yellow
+        width 50%
+        height 100%
+        float right
+        .a-domain__content
+            max-width 460px
+            display block
+            margin 180px auto 100px auto
+            img
+                max-width 100%
+                max-height 100%
+                margin-bottom 70px
+            .about__domain__heading
+                font 2.57em font-stuck
+                font-weight 700
+                margin-bottom 20px
+            .about__domain__text
+                font 1em font-stuck
+                margin-bottom 50px
+            .about__more
+                color white
+                font 1.28em font-stuck
+                padding 10px 50px 
+                border 3px solid white
+                text-decoration none
+                transition all .3s ease-in
+                &:hover
+                    border-radius 25px
+        
+    
+.features
+    color blue
+    width 100%
+    height 700px
+    text-align center
+    background light url('../img/feat-bg.png') no-repeat
+    background-position center center
+    .features__heading
+        padding-top 90px
+        margin-bottom 20px
+        text-transform capitalize
+        font 3.42em font-stuck
+        font-weight 700
+    .features__text
+        margin-bottom 80px
+        text-transform capitalize
+        font 1.8em font-stuck
+    .features__list
+        display flex
+        max-width 1130px
+        margin 0 auto
+        list-style none
+        .features__list__item
+            flex 1
+            flex-basis 240px
+            img
+                max-width 100%
+                max-height 100%
+            .sep
+                width 70px
+                height 2px
+                background blue
+                opacity .5
+                margin 30px auto
+            h5
+                color yellow
+                text-transform capitalize
+                font 2em font-header
+                margin-bottom 20px
+            p
+                font 1em font-stuck
+                line-height 1.2em
+                
+    
+
+.clients
+    width 100%
+    height 250px
+    background white
+    .clients__content
+        float left
+        .c-content__heading
+            font 2.5em font-stuck
+            font-weight 700
+            text-transform capitalize
+            color blue
+            margin 80px 0 25px 100px
+        .c-content__text
+            font 1em font-stuck
+            color text-gray
+            max-width 350px
+            margin-left 100px
+    .clients__logos
+        float right
+        display flex
+        margin 100px 75px 0 0
+        img
+            max-width 100%
+            max-height 100%
+            padding-right 25px
+
+                
+                
+.reviews
+    width 100%
+    height 300px
+    background white
+    .reviews__list
+        width 1180px
+        margin 40px 110px 0 110px
+        list-style none
+        display flex
+        .reviews__list__item
+            flex 1
+            height 175px
+            flex-basis 365px
+            background review-gray
+            position relative
+            margin-right 30px
+            p
+                color rev-gray
+                width 320px
+                font 1em font-stuck
+                font-style italic
+                padding 20px 20px 5px 15px
+                margin-bottom 120px
+                word-wrap break-word
+            span 
+                color dark-gray
+                padding-left 20px
+                font 1.14em font-stuck
+                font-weight 700
+                position absolute
+                top 130px
+            img
+                max-width 100%
+                max-height 100%
+                float right
+                position absolute
+                top 120px
+                left 230px
+                
+                
+.pricing
+    width 100%
+    height 270px
+    background blue
+    .pricing__content
+        float left
+        width 70%
+        .pricing__heading
+            color white
+            font 2.5em font-stuck
+            font-weight 700
+            margin 90px 0 10px 14%
+        .pricing__text
+            color light-gray
+            font 1.28em sans-serif
+            margin-left 14%
+    .pricing__button
+        float right
+        width 30%
+        margin-top 125px
+        a
+            text-decoration none
+            padding 25px 50px 
+            font 1.28em sans-serif
+            font-weight 700
+            margin-right 12%
+            border 3px solid white
+            color blue
+            background yellow
+            transition all .3s ease-in
+            &:hover
+                background darken(yellow, 20%)
+        
+        
+
+.footer
+    clear both
+    position relative
+    z-index 10
+    height 3em
+    margin-top -3em
+    background light-blue url('../img/map.png') no-repeat
+    background-position 20% 40%
+    width 100%
+    height 650px
+    .marker
+        float left
+        position absolute
+        margin 330px 0 0 720px
+        display flex
+        img
+            max-width 100%
+            max-height 100%
+            transition all .3s ease-in
+            &:hover
+                transform rotate(360deg)
+        .text
+            margin-left 15px
+            color white
+            p
+                font 1.28em font-stuck
+                font-weight 700
+    .footer__content
+        float right
+        margin 100px 115px 20px 0
+        .footer__list 
+            list-style none
+            margin-bottom 30px
+            .f-list__heading
+                color white
+                font 1.28em font-stuck
+                font-weight 700
+                margin-bottom 30px
+                text-align right
+            .f-list__item
+                padding 10px 0
+                border-bottom 1px solid light-gray
+                text-align right
+                &:last-child
+                        border-bottom none
+                a
+                    text-decoration none
+                    font 1.14em font-stuck
+                    color white
+                    text-transform capitalize
+                    transition all .3s ease-in
+                    &:hover
+                        color yellow
+        .footer__social
+            list-style none
+            display flex
+            .f-social__item 
+                padding 0 10px
+                i
+                    color yellow
+                    transition all .3s ease-in
+                    &:hover
+                        color darken(yellow, 20%)
+        .footer__top
+            color white
+            font 0.8em font-stuck
+            text-align right
+            margin-top 55px
+            float right
+            text-decoration none
+            transition all .3s ease-in
+            &:hover
+                color yellow
+                font-weight 700
+    .footer__copyright
+        text-align center
+        clear both
+        img
+            max-width 100%
+            max-height 100%
+        p
+            font 1.28em font-stuck
+            color white  
+        .f-copyright__text
+            margin-top 30px
+        .f-text
+            font 0.9em font-stuck
+                
+        
